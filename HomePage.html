@@ -12,9 +12,9 @@
 </head>
 <body>
 
-  <nav class="navbar navbar-nav-scroll navbar-expand-sm navbar-dark bg-dark h5 font-weight-normal">
-    <a class=" navbar-brand btn inverse btn-dark border border-white" href="#">B</a>
-    <div class=" mr-auto mx-2 my-2 py-1" id="navbarTogglerDemo01">
+  <nav class="navbar navbar-nav-scroll navbar-expand navbar-dark bg-dark mb-5 ">
+    <a class=" navbar-brand btn inverse btn-dark border border-white " href="#">B</a>
+    <div class=" mr-auto  pl-0 py-1 navbar" id="navbarTogglerDemo01">
       <ul class="navbar-nav ">
         <li class="nav-item active">
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -41,27 +41,104 @@
     </div>
 
 
-    <div class=" mx-2 my-1">
+    <div class=" mx-2 ">
       <ul class=" navbar-nav justify-content-end ">
         <li class="nav-item">
           <a class="nav-link" href="#">Blog</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">v4.4</a>
-        </li>
-        <a class="btn btn-outline-warning" href="#">Download</a>
 
+        <li class="nav-item dropdown">
+          <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">v4.4</a>
+          <div class="dropdown-menu dropdown-menu-md-right">
+            <a href="#" class="dropdown-item active">latest (4.4.1)</a>
+            <a href="#" class="dropdown-item active">v4.3.1</a>
+            <a href="#" class="dropdown-item active">v4.2.1</a>
+            <a href="#" class="dropdown-item active">latest (4.0.0)</a>
+            <a href="#" class="dropdown-item active">v3.0.1</a>
+          </div>
+        </li>
+
+        <a class="btn btn-outline-warning" href="#">Download</a>
       </ul>
     </div>
 
-    
-
   </nav>
 
+  <main >
+    <div class="container pb-4 pt-4">
+      <div class="row mb-4">
+        <div class="col-6 order-2">
+          <img class="img-responsive"  height="430px" width="530px" src="bootstrap_img_1.png" />
+        </div>
 
+        <div class="col-6 text-left pr-5 order-1">
+          <h1 class="mb-3 display-4 font-weight-bold ">Bootstrap</h1>
+          <p class="lead ">
+            Build responsive, mobile-first projects on the web with the world’s most popular front-end component library.
+          </p>
+          <p class="lead mb-4">
+            Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful plugins built on jQuery.
+          </p>
+          <div class="row mx-0">
+            <div class="col text-dark">
+              <a href="#" class="btn btn-outline-dark w-100 mb-3 btn-lg">Get started</a>
+            </div>
+            <div class="col text-dark">
+              <a href="#" class="btn btn-outline-dark w-100 mb-3 btn-lg">Download</a>
+            </div>
+          </div>
+          <p class="mb-4">Currently 4.4.1</p>
+
+          <div class="row col-10 pl-0 bg-light mb-4 py-4 ml-0">
+            <a href="https://srv.carbonads.net/ads/click/x/GTND42QUF6BDLKJUCE74YKQMCAAIC277C6SI6Z3JCWSILK7NCESIPK3KC6BI55QMCTSI6K3EHJNCLSIZ?segment=placement:getbootstrapcom;" class=" carbon-img col-5" target="_blank" rel="noopener sponsored"><img src="https://cdn4.buysellads.net/uu/1/58353/1576607757-DataStax-Luna-Logo-2019-260x200.png" alt="ads via Carbon" border="0" style="max-width: 130px;"></a>
+            <a href="https://srv.carbonads.net/ads/click/x/GTND42QUF6BDLKJUCE74YKQMCAAIC277C6SI6Z3JCWSILK7NCESIPK3KC6BI55QMCTSI6K3EHJNCLSIZ?segment=placement:getbootstrapcom;" class="carbon-text col-7 " target="_blank" rel="noopener sponsored">DataStax Luna - budget-friendly, flexible support for open source Apache Cassandra™.</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    </main>
+
+    <div class="row mt-4 pt-4">
+
+      <div class="col-md-4 bg-light border border-white">
+        <div class="pl-5 py-5 ml-1 mr-4 text-left ">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false"><title>Import</title><path d="M28 22v8H4v-8M16 4v20m-8-8l8 8 8-8"/></svg>
+          <h3 class="mb-2">
+            Installation
+          </h3>
+          <p class=" mb-4">
+            Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include documentation, but do include our build system and readme.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 bg-light border border-white">
+        <div class="px-4 py-5 text-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false"><title>Download</title><path d="M9 22c-9 1-8-10 0-9C6 2 23 2 22 10c10-3 10 13 1 12m-12 4l5 4 5-4m-5-10v14"/></svg>
+          <h3 class="mb-2">
+            BootstrapCDN
+          </h3>
+          <p>
+            When you only need to include Bootstrap’s compiled CSS or JS, you can use BootstrapCDN.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-4 bg-light border border-white">
+        <div class="px-4 py-5 text-left">
+          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false"><title>Lightning</title><path d="M18 13l8-11L8 13l6 6-8 11 18-11z"/></svg>
+          <h3 class="mb-2 ">
+            Official Themes
+          </h3>
+          <p>
+            Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.
+          </p>
+        </div>
+      </div>
+
+    </div>
 
 
     <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
