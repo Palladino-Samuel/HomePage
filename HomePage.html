@@ -6,18 +6,19 @@
     <title>Home</title>
     <!-- Bootstrap CSS file -->
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.min">
-    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-reboot.min">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css">
+    <link rel="stylesheet" href="icomoon-v1.0/style.css"></head>
 
 </head>
 <body>
 
-  <nav class="navbar navbar-nav-scroll navbar-expand navbar-dark bg-dark mb-5 ">
+  <nav class="navbar navbar-nav-scroll navbar-expand-sm navbar-dark bg-dark mb-5">
     <a class=" navbar-brand btn inverse btn-dark border border-white " href="#">B</a>
-    <div class=" mr-auto  pl-0 py-1 navbar" id="navbarTogglerDemo01">
+    <div class=" mr-auto  pl-0 py-1 navbar">
       <ul class="navbar-nav ">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#">Home</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Documentation</a>
@@ -43,9 +44,6 @@
 
     <div class=" mx-2 ">
       <ul class=" navbar-nav justify-content-end ">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Blog</a>
-        </li>
 
         <li class="nav-item dropdown">
           <a class="nav-item nav-link dropdown-toggle" data-toggle="dropdown" href="#">v4.4</a>
@@ -58,13 +56,14 @@
           </div>
         </li>
 
+
+
         <a class="btn btn-outline-warning" href="#">Download</a>
       </ul>
     </div>
-
   </nav>
 
-  <main >
+  <main class="bg-white">
     <div class="container pb-4 pt-4">
       <div class="row mb-4">
         <div class="col-6 order-2">
@@ -97,53 +96,114 @@
         </div>
       </div>
     </div>
+  </main>
 
-    </main>
+    <article>
+        <div class="row m-0 mt-4 pt-4"><!--mt-4 pt-4-->
 
-    <div class="row mt-4 pt-4">
+          <div class="col-4 bg-light border border-white ml-0">
+            <div class="py-5 px-4 mx-2 text-left">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false"><title>Import</title><path d="M28 22v8H4v-8M16 4v20m-8-8l8 8 8-8"/></svg>
+              <h3 class="mb-2">
+                Installation
+              </h3>
+              <p class=" mb-4">
+                Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include documentation, but do include our build system and readme.
+              </p>
+            </div>
+          </div>
 
-      <div class="col-md-4 bg-light border border-white">
-        <div class="pl-5 py-5 ml-1 mr-4 text-left ">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false"><title>Import</title><path d="M28 22v8H4v-8M16 4v20m-8-8l8 8 8-8"/></svg>
-          <h3 class="mb-2">
-            Installation
-          </h3>
-          <p class=" mb-4">
-            Include Bootstrap’s source Sass and JavaScript files via npm, Composer or Meteor. Package managed installs don’t include documentation, but do include our build system and readme.
-          </p>
+          <div  class="col-4 bg-light border border-white">
+            <div class="py-5 px-4 mx-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false"><title>Download</title><path d="M9 22c-9 1-8-10 0-9C6 2 23 2 22 10c10-3 10 13 1 12m-12 4l5 4 5-4m-5-10v14"/></svg>
+              <h3 class="mb-2">
+                BootstrapCDN
+              </h3>
+              <p>
+                When you only need to include Bootstrap’s compiled CSS or JS, you can use BootstrapCDN.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-4 bg-light border border-white">
+            <div class="py-5 px-4 mx-2">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false"><title>Lightning</title><path d="M18 13l8-11L8 13l6 6-8 11 18-11z"/></svg>
+              <h3 class="mb-2 ">
+                Official Themes
+              </h3>
+              <p>
+                Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.
+              </p>
+            </div>
+          </div>
+
         </div>
-      </div>
+    </article>
 
-      <div class="col-md-4 bg-light border border-white">
-        <div class="px-4 py-5 text-left">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false"><title>Download</title><path d="M9 22c-9 1-8-10 0-9C6 2 23 2 22 10c10-3 10 13 1 12m-12 4l5 4 5-4m-5-10v14"/></svg>
-          <h3 class="mb-2">
-            BootstrapCDN
-          </h3>
-          <p>
-            When you only need to include Bootstrap’s compiled CSS or JS, you can use BootstrapCDN.
-          </p>
-        </div>
-      </div>
+    <div  class=" ">
 
-      <div class="col-md-4 bg-light border border-white">
-        <div class="px-4 py-5 text-left">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="text-primary mb-2" viewBox="0 0 32 32" focusable="false"><title>Lightning</title><path d="M18 13l8-11L8 13l6 6-8 11 18-11z"/></svg>
-          <h3 class="mb-2 ">
-            Official Themes
-          </h3>
-          <p>
-            Take Bootstrap 4 to the next level with official premium themes—toolkits built on Bootstrap with new components and plugins, docs, and build tools.
-          </p>
-        </div>
-      </div>
+      <a class="justify-content-center btn btn-lighter fixed-bottom " data-toggle="collapse" href="#collapse_1" >
+        <span class="icon-circle-up btn-outline-white"></span>
+      </a>
 
+
+      <div class="collapse fixed-bottom" id="collapse_1" >
+        <nav class="navbar navbar-nav-scroll navbar-expand navbar-dark bg-dark mb-5 fixed-bottom ">
+          <a class=" navbar-brand btn inverse btn-dark border border-white " href="#">B</a>
+          <div class=" mr-auto  pl-0 py-1 navbar">
+            <ul class="navbar-nav ">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Documentation</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Icons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Themes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Expo</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+              </li>
+            </ul>
+          </div>
+
+          <a class="btn btn-dark" data-toggle="collapse" href="#collapse_1">
+            <span class="icon-circle-down"></span>
+          </a>
+        </nav>
+      </div>
+      <div class="collapse" id="collapse_2">
+        <p>srv.carbonads.net/ads/click/x/GTND42QUF6BDLKJUCE74YKQMCAAIC277C6SI6Z3JCWSILK7NCESIPK3KC6BI55QMCTSI6K3EHJNCLSIZ?segment=placement:getbootstrapcom</p>
+      </div>
     </div>
 
+    <footer class="column bg-light pl-4 ml-2 pt-5 pb-4 border border-white small ">
+      <div class="col font-weight-bold mb-3">
+          <a class="pr-3 text-muted" href="https://github.com/twbs/bootstrap">GitHub</a>
+          <a class="pr-3 text-muted" href="https://twitter.com/getbootstrap">Twitter</a>
+          <a class="pr-3 text-muted" href="/docs/4.4/examples/">Examples</a>
+          <a class="pr-3 text-muted" href="/docs/4.4/about/overview/">About</a>
+      </div>
+      <div class="col-7 text-muted">
+        <p>Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.
+            Currently v4.4.1. Code licensed MIT, docs CC BY 3.0.</p>
+      </div>
+
+    </footer>
 
     <!-- JS files: jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min"></script>
-    <script src="bootstrap-4.4.1-dist/js/bootstrap"></script>
-    <script src="bootstrap-4.4.1-dist/js/bootstrap.min"></script>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
+    <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
 </body>
 </html>
