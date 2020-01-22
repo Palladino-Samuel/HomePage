@@ -1,0 +1,10 @@
+body{
+  /*padding-top: 40px !important;*/
+}
+
+.navUp{
+  top: -80px !important;
+}
+.navDown{
+  top: 40px !important;
+}
