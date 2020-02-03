@@ -23,17 +23,6 @@ const _scrollNav= (function(){   //nav bar scroll
   }
 })();
 
-var _tryModel =(function(){
-
-function _find(){
-
-}
-
-  return{
-
-  }
-})();
-
 const _progresSbar= (function(){   //progress bar
   let _y, _ris;
   let _h=$(window).height();

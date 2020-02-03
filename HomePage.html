@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Home</title>
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/min/styles.min.css">
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="bootstrap-4.4.1-dist/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="icomoon-v1.0/style.css">
@@ -63,7 +63,7 @@
     <div class="container pb-4 pt-4">
       <div class="row mb-4 mt-4 pt-4">
         <div class="col order-2">
-          <img class="img-responsive"  height="430px" width="530px" src="bootstrap_img_1.png" />
+          <img class="img-responsive"  height="430px" width="530px" src="img/bootstrap_img_1.png" />
         </div>
         <div class="col text-left pr-5 order-1">
 
@@ -146,6 +146,35 @@
         </div>
   </article>
 
+    <div id="carouselControl" class="carousel slide carousel-fade" data-ride="carousel">
+      <div class="carousel-inner">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselControl" data-slide-to="0" class="active bg-secondary"></li>
+        <li data-target="#carouselControl" data-slide-to="1" class="bg-secondary" ></li>
+        <li data-target="#carouselControl" data-slide-to="2" class="bg-secondary" ></li>
+      </ol>
+      <div class="carousel-item active" data-interval="2000">
+        <img src="img/1.jpg" class="d-block w-100 h-75" alt="prova1">
+      </div>
+      <div class="carousel-item">
+        <img src="img/2.jpg" class="d-block w-100" alt="prova2">
+      </div>
+      <div class="carousel-item">
+        <img src="img/3.jpg" class="d-block w-100" alt="prova3">
+      </div>
+    </div>
+
+    <a class="carousel-control-prev" href="#carouselControl" role="button" data-slide="prev">
+      <span class=" carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only bg-secondary">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselControl" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+  </div>
+
   <footer class="column bg-light pl-4 ml-0 pt-5 pb-4 border border-white small ">
       <div class="col font-weight-bold mb-3">
           <a class="pr-3 text-muted" href="https://github.com/twbs/bootstrap">GitHub</a>
@@ -169,7 +198,7 @@
   <script src="bootstrap-4.4.1-dist/js/bootstrap.bundle.min.js"></script>
   <script src="bootstrap-4.4.1-dist/js/bootstrap.js"></script>
   <script src="bootstrap-4.4.1-dist/js/bootstrap.min.js"></script>
-  <script type="module" src="js/jsScript.js"></script>
+  <script type="module" src="js/output.min.js"></script>
 
   </script>
 </body>
