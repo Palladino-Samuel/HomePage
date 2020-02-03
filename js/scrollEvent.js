@@ -1,6 +1,7 @@
 let _didScroll;//   scroll pagina
 let _lastScrollTop = 0;//   salva l'ultimo scroll
 
+
 const _scrollNav= (function(){   //nav bar scroll
   let _delta = 5;
   let _navbarHeight = $('nav').outerHeight();
@@ -23,15 +24,18 @@ const _scrollNav= (function(){   //nav bar scroll
   }
 })();
 
+
 const _progresSbar= (function(){   //progress bar
   let _y, _ris;
-  let _h=$(window).height();
+  let _h=$(document).height();
+  let _j=$(window).height();
+  let _set=((_h+_j)/2);
 
   function _setY(now){
     _y=now.scrollTop();
   }
   function _calc(now){
-    _ris=(_y/_h)*100;
+    _ris=(_y/_set)*100;
   }
   function setBar(now){
     _setY(now);
